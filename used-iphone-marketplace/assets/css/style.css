@@ -1,0 +1,219 @@
+/* ---------------------- GENERAL ---------------------- */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f2f2f2;
+    color: #333333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #0d6efd; /* primary blue */
+}
+a:hover {
+    color: #0b5ed7;
+}
+
+/* ---------------------- NAVBAR ---------------------- */
+.navbar {
+    background-color: #545e05 !important;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+.navbar .navbar-brand {
+    font-weight: 700;
+    color: #fff !important;
+}
+
+.navbar .nav-link {
+    color: #fff !important;
+    margin-right: 10px;
+    font-weight: 500;
+}
+
+.navbar .nav-link:hover {
+    color: #dce7ff !important;
+}
+
+/* ---------------------- CONTAINER & TITLES ---------------------- */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+h2, h3, h4 {
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #0d6efd;
+}
+
+/* ---------------------- FORMS ---------------------- */
+form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    margin-bottom: 30px;
+}
+
+form label {
+    font-weight: 500;
+}
+
+form input, form select, form textarea {
+    border-radius: 8px;
+    border: 1px solid #ced4da;
+    padding: 10px;
+    font-size: 0.95rem;
+    width: 100%;
+    box-sizing: border-box;
+    transition: all 0.2s ease-in-out;
+}
+
+form input:focus, form select:focus, form textarea:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 0.2rem rgba(13,110,253,.25);
+    outline: none;
+}
+
+/* ---------------------- BUTTONS ---------------------- */
+.btn-primary {
+    background-color: #ff7f50; /* CTA orange */
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #ff6333;
+}
+
+.btn-success {
+    background-color: #198754;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+.btn-success:hover {
+    background-color: #157347;
+}
+
+.btn-danger {
+    background-color: #dc3545; /* error/red */
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+.btn-danger:hover {
+    background-color: #b02a37;
+}
+
+.btn-info {
+    background-color: #0dcaf0;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+.btn-info:hover {
+    background-color: #31d2f2;
+}
+
+/* ---------------------- CARDS ---------------------- */
+.card {
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.card-img-top {
+    height: 180px;
+    object-fit: cover;
+}
+
+.card-title {
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.card-text {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* ---------------------- TABLES ---------------------- */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table th, table td {
+    padding: 10px 15px;
+    text-align: left;
+    border-bottom: 1px solid #dee2e6;
+}
+
+table th {
+    background-color: #0d6efd;
+    color: #fff;
+    font-weight: 600;
+}
+
+table tr:hover {
+    background-color: #e6f0ff;
+}
+
+/* ---------------------- ALERTS ---------------------- */
+.alert {
+    border-radius: 8px;
+    padding: 12px 20px;
+    font-weight: 500;
+}
+
+.alert-success {
+    background-color: #d1e7dd;
+    color: #0f5132;
+}
+
+.alert-danger {
+    background-color: #f8d7da;
+    color: #842029;
+}
+
+.alert-info {
+    background-color: #cff4fc;
+    color: #055160;
+}
+
+/* ---------------------- FOOTER ---------------------- */
+footer {
+    background-color: #545e05;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+/* ---------------------- RESPONSIVE ---------------------- */
+@media (max-width: 768px) {
+    .card-img-top {
+        height: 150px;
+    }
+    .navbar .nav-link {
+        margin-right: 0;
+        padding: 8px 0;
+    }
+}
